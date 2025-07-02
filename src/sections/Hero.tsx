@@ -1,11 +1,21 @@
+import Image from 'next/image';
+
 export default function Hero() {
   return (
-    <section className="w-full bg-gradient-to-b from-rose-50 via-white to-amber-50 py-20 sm:py-32 flex items-center justify-center">
-      <div className="max-w-2xl mx-auto text-center px-4">
-        <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-rose-900 mb-6 leading-tight">
+    <section className="relative w-full h-[340px] sm:h-[420px] md:h-[500px] flex items-center justify-center overflow-hidden">
+      <Image
+        src="/ocean.jpg"
+        alt="Calming ocean background"
+        fill
+        className="object-cover object-top w-full h-full"
+        priority
+      />
+      <div className="absolute inset-0 bg-white/40" />
+      <div className="relative z-10 max-w-2xl mx-auto text-center px-4">
+        <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-rose-900 mb-6 leading-tight drop-shadow-md">
           Helping You Heal, One Conversation at a Time
         </h1>
-        <h2 className="font-sans text-xl sm:text-2xl text-rose-700 mb-10 font-light">
+        <h2 className="font-sans text-xl sm:text-2xl text-rose-700 mb-10 font-light drop-shadow-md">
           Private therapy with Dr. Serena Blake, PsyD
         </h2>
         <a
