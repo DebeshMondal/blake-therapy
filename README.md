@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blake Therapy – Dr. Serena Blake, PsyD
 
-## Getting Started
+A modern, calming, and professional therapist portfolio website for Dr. Serena Blake, PsyD, a licensed clinical psychologist in Los Angeles.
 
-First, run the development server:
+## 🌊 Live Demo
+Deployed on [Vercel](https://vercel.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔧 Tech Stack
+- [Next.js 14 (App Router)](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Headless UI](https://headlessui.com/) (Accordion/FAQ)
+- [react-hook-form](https://react-hook-form.com/) (Contact form validation)
+- [Framer Motion] (for soft animations, optional)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Project Structure
+- `/app` – App Router pages/layout
+- `/components` – Reusable UI components (Navbar, etc.)
+- `/sections` – Main page sections (Hero, About, Services, FAQ, Contact)
+- `/public` – Static assets (images)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
+1. **Clone the repo:**
+   ```bash
+   git clone <your-repo-url>
+   cd blake-therapy
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run locally:**
+   ```bash
+   npm run dev
+   ```
+   Visit [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Deployment
+- Deploy instantly on [Vercel](https://vercel.com/) (auto-detects Next.js)
+- Push to your main branch and Vercel will auto-deploy
 
-## Learn More
+## 🖼️ Customization
+- Replace images in `/public` as needed (e.g., `blake.jpg`, `ocean.jpg`, `card1.png`)
+- Edit content in `/sections` for your own text, services, and FAQs
 
-To learn more about Next.js, take a look at the following resources:
+## 🙏 Credits
+- Inspired by [drjenniferhahm.com](https://www.drjenniferhahm.com)
+- Ocean image: Unsplash or your own
+- Built with ❤️ using Next.js & Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Feel free to reach out for support or customization!**
