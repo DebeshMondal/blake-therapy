@@ -19,9 +19,9 @@ const contactInfo = [
 
 export default function About() {
   return (
-    <section id="about" className="w-full bg-white py-16 sm:py-24">
+    <section id="about" className="w-full bg-white py-20 sm:py-28">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 px-4">
-        <div className="flex-shrink-0 w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-md border border-rose-100 bg-rose-50">
+        <div className="flex-shrink-0 w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-md border border-blue-100 bg-blue-50">
           <Image
             src="/blake.jpg"
             alt="Dr. Serena Blake"
@@ -32,13 +32,13 @@ export default function About() {
           />
         </div>
         <div className="flex-1">
-          <h3 className="font-serif text-2xl text-rose-900 mb-4">About Dr. Blake</h3>
-          <p className="text-lg text-neutral-800 mb-8 font-sans leading-relaxed">{bio}</p>
+          <h3 className="font-serif text-2xl text-blue-900 mb-4">About Dr. Blake</h3>
+          <p className="text-lg text-blue-900/90 mb-8 font-sans leading-relaxed">{bio}</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {contactInfo.map((item) => (
-              <div key={item.label} className="rounded-xl bg-rose-50 border border-rose-100 p-4 text-center shadow-sm">
-                <div className="text-xs uppercase tracking-wider text-rose-700 font-semibold mb-1">{item.label}</div>
-                <div className="text-base text-rose-900 font-medium">{item.value}</div>
+              <div key={item.label} className="rounded-xl bg-sky-50 border border-blue-100 p-4 text-center shadow-sm">
+                <div className="text-xs uppercase tracking-wider text-sky-700 font-semibold mb-1">{item.label}</div>
+                <div className="text-base text-blue-900 font-medium">{item.value}</div>
               </div>
             ))}
           </div>
