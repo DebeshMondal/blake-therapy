@@ -3,7 +3,7 @@
 A modern, calming, and professional therapist portfolio website for Dr. Serena Blake, PsyD, a licensed clinical psychologist in Los Angeles.
 
 ## 🌊 Live Demo
-Deployed on [Vercel](https://vercel.com/)
+Deployed on [Vercel](https://blake-therapy-38as.vercel.app/)
 
 ## 🔧 Tech Stack
 - [Next.js 14 (App Router)](https://nextjs.org/)
