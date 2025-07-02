@@ -2,11 +2,20 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
+interface ContactFormData {
+  name: string;
+  phone?: string;
+  email: string;
+  message?: string;
+  contactTime?: string;
+  consent: boolean;
+}
+
 export default function Contact() {
-  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm();
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<ContactFormData>();
   const [submitted, setSubmitted] = useState(false);
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: ContactFormData) => {
     setSubmitted(true);
     console.log(data);
     setTimeout(() => setSubmitted(false), 4000);

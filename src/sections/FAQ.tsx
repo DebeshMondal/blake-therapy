@@ -24,7 +24,7 @@ export default function FAQ() {
       <div className="max-w-2xl mx-auto px-4">
         <h3 className="font-serif text-3xl text-blue-900 mb-10 text-center">Frequently Asked Questions</h3>
         <div className="space-y-4">
-          {faqs.map((faq, i) => (
+          {faqs.map((faq) => (
             <Disclosure key={faq.q}>
               {({ open }) => (
                 <div className="rounded-xl border border-blue-100 bg-sky-50/60 shadow-sm">
