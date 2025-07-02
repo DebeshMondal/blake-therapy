@@ -21,9 +21,9 @@ export default function Services() {
     <section id="services" className="w-full bg-sky-50 py-20 sm:py-28">
       <div className="max-w-5xl mx-auto px-4">
         <h3 className="font-serif text-3xl text-blue-900 mb-12 text-center">How I Can Help</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-10">
           {services.map((service, i) => (
-            <div key={service.title} className="rounded-2xl bg-white shadow-md border border-blue-100 p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-200">
+            <div key={service.title} className="rounded-2xl bg-white shadow-md border border-blue-100 p-6 flex flex-col items-center transition-transform duration-200 hover:shadow-xl hover:-translate-y-2">
               <div className="w-28 h-28 mb-6 rounded-full overflow-hidden bg-sky-100 flex items-center justify-center">
                 {/* Replace with actual image when provided */}
                 <img src={service.img} alt={service.title} className="object-cover w-full h-full" />

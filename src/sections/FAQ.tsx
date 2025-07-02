@@ -31,7 +31,7 @@ export default function FAQ() {
                   <Disclosure.Button className="flex w-full justify-between items-center px-6 py-4 text-left font-sans text-blue-900 text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-200 rounded-xl">
                     <span>{faq.q}</span>
                     <ChevronUpIcon
-                      className={`h-5 w-5 text-sky-600 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+                      className={`h-5 w-5 text-sky-600 transition-transform duration-300 ${open ? 'rotate-180 scale-110' : 'scale-100'}`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-6 pb-4 pt-1 text-blue-900/90 text-base font-sans">

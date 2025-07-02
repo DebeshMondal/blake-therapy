@@ -10,7 +10,7 @@ export default function Hero() {
         className="object-cover object-top w-full h-full"
         priority
       />
-      <div className="absolute inset-0 bg-white/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-sky-200/60 via-white/40 to-white/60" />
       <div className="relative z-10 max-w-2xl mx-auto text-center px-4">
         <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-rose-900 mb-6 leading-tight drop-shadow-md">
           Helping You Heal, One Conversation at a Time
@@ -20,7 +20,7 @@ export default function Hero() {
         </h2>
         <a
           href="#contact"
-          className="inline-block rounded-full bg-rose-700 text-white px-8 py-3 text-lg font-medium shadow-md hover:bg-rose-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-300"
+          className="inline-block rounded-full bg-rose-700 text-white px-8 py-3 text-lg font-medium shadow-md hover:bg-rose-800 transition-transform duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-300 transform hover:scale-105 hover:shadow-xl"
         >
           Book a Free Consult
         </a>

@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
 export default function Contact() {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm();
   const [submitted, setSubmitted] = useState(false);
 
   const onSubmit = (data: any) => {
@@ -45,9 +45,22 @@ export default function Contact() {
             <span className="text-blue-900 font-sans text-sm">I consent to being contacted about therapy services *</span>
           </div>
           {errors.consent && <span className="text-rose-600 text-sm block">{errors.consent.message as string}</span>}
-          <button type="submit" className="w-full mt-4 rounded-full bg-sky-600 text-white py-3 font-medium text-lg shadow hover:bg-sky-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-200">Send Message</button>
-          {submitted && <div className="text-green-700 text-center mt-4 font-semibold">Thank you! Your message has been received.</div>}
+          <button type="submit" disabled={isSubmitting} className="w-full mt-4 rounded-full bg-sky-600 text-white py-3 font-medium text-lg shadow hover:bg-sky-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-200 disabled:opacity-60 disabled:cursor-not-allowed">{isSubmitting ? 'Sending...' : 'Send Message'}</button>
+          {submitted && (
+            <div className="flex flex-col items-center animate-fadein mt-4">
+              <svg className="h-8 w-8 text-green-600 mb-2 animate-pop" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <div className="text-green-700 text-center font-semibold">Thank you! Your message has been received.</div>
+            </div>
+          )}
         </form>
+        <style jsx>{`
+          .animate-fadein { animation: fadein 0.7s both; }
+          .animate-pop { animation: pop 0.4s cubic-bezier(.39,.575,.565,1) both; }
+          @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+          @keyframes pop { 0% { transform: scale(0.7); } 80% { transform: scale(1.15); } 100% { transform: scale(1); } }
+        `}</style>
       </div>
     </section>
   );
