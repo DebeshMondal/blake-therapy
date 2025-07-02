@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 
 const bio = `Dr. Serena Blake, PsyD, is a licensed clinical psychologist based in Los Angeles. She specializes in helping adults and couples navigate anxiety, relationship challenges, and trauma recovery. Dr. Blake's approach is warm, collaborative, and tailored to each client's unique needs.`;
