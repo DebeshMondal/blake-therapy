@@ -43,7 +43,7 @@ export default function Contact() {
           </div>
           <div>
             <label className="block font-sans text-blue-900 mb-1">What brings you here?</label>
-            <textarea {...register('message')} rows={4} className="w-full rounded-lg border border-blue-200 px-4 py-2 focus:ring-2 focus:ring-sky-200 outline-none text-blue-900 placeholder:text-blue-400" placeholder="Curiosity" />
+            <textarea {...register('message')} rows={4} className="w-full rounded-lg border border-blue-200 px-4 py-2 focus:ring-2 focus:ring-sky-200 outline-none text-blue-900 placeholder:text-blue-400" placeholder="What brings you here?" />
           </div>
           <div>
             <label className="block font-sans text-blue-900 mb-1">Preferred contact time</label>
